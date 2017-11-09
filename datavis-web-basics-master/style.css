@@ -1,0 +1,21 @@
+div.reilly h2 {
+color: orange;
+background-color : blue;
+}
+
+div.reilly li{
+    color :yellow;    
+}
+
+div.reilly ol{
+background-color : black;
+}
+
+h1.Uzo {
+color: black
+background-color: purple;
+}
+
+table{
+    border: 1;
+}

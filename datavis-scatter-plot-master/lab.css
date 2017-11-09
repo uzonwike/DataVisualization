@@ -1,0 +1,51 @@
+h1 {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+
+p {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.Austin {
+  fill: rgb(141, 211, 199);
+  
+}
+
+.Houston {
+  fill: rgb(190, 186, 218);
+  
+}
+
+.Dallas {
+  fill: rgb(255, 255, 179);
+  
+}
+
+.SanAntonio {
+  fill: rgb(251, 128, 114);
+  
+}
+
+text.legend-text {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-size: 13px;
+}
+text.legend-header, text.x-axis, text.y-axis {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.tooltip {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+  font-size: 12px;
+  color:rgb(255,255,255);
+  background-color: rgb(0,0,0);
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  pointer-events: none;
+  text-align: center;
+}

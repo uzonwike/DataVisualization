@@ -1,0 +1,10 @@
+g.links line {
+  stroke: black;
+  stroke-opacity: 0.5;
+  stroke-width: 0.5pt;
+}
+
+g.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}

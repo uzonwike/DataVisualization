@@ -1,0 +1,17 @@
+/* This CSS rule makes a non-scrollable page */
+body {
+  overflow: hidden;
+}
+
+/* Use this CSS class to make <div>s that you can position in random locations */
+.linkbox {
+  font-size: 24pt;
+  position: absolute;
+}
+
+/* Introduce a parent container that occupies the whole width of the page */
+#container{
+	display:block;
+	float:left;
+	width: 100%;
+}

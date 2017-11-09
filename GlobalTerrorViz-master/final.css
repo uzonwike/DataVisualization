@@ -1,0 +1,183 @@
+svg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.land {
+  fill: #ccc;
+}
+
+.state-boundary {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+.country {
+  fill: #757575;
+  stroke: #fff;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+}
+
+/* points */
+
+.point {
+  fill: yellow;
+  opacity: .3;
+}
+
+.geoDiv{
+    position: absolute;
+}
+
+.paragraph{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  width: 400px;
+  height: 200px;
+  font-weight:normal;
+  color:#000000;
+  letter-spacing:0pt;
+  word-spacing:0pt;
+  font-size:20px;
+  text-align:left;
+  font-family:helvetica,
+  sans-serif;
+  line-height:1;
+}
+
+/* Tooltip CSS */
+.d3-tip {
+line-height: 1.5;
+font-weight: 400;
+font-family:"avenir next", Arial, sans-serif;
+padding: 6px;
+background: rgba(0, 0, 0, 0.6);
+color: #FFA500;
+border-radius: 1px;
+pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 8px;
+  width: 100%;
+  line-height: 1.5;
+  position: absolute;
+  pointer-events: none;
+
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+  content: "\25BC";
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+  content: "\25B2";
+  margin: 0 0 1px 0;
+  top: -8px;
+  left: 0;
+  text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+  content: "\25B6";
+  margin: -4px 0 0 -1px;
+  top: 50%;
+  left: 100%;
+}
+
+/*    text{
+  pointer-events:none;
+}*/
+
+.details{
+  color:white;
+}
+
+
+/*Credit for the base implementation of the slider to: https://bl.ocks.org/mbostock/6499018 */
+
+.ticks {
+  font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #ddd;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+/*Title and header*/
+h2{
+  position:absolute;
+  top:35%;
+  left:5%;
+  font-family:sans-serif;
+}
+
+h4{
+  position:absolute;
+  top: 41%;
+  left:5%;
+  font-family:sans-serif;
+}
+
+.definition{
+  position:absolute;
+  top: 44%;
+  left:5%;
+  width:250px;
+}
+
+h5{
+  position:absolute;
+  top: 60%;
+  left:5%;
+  font-family:sans-serif;
+}

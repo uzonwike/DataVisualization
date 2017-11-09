@@ -1,0 +1,36 @@
+/* Add a border and rounded corners to the calculator */
+#calc {
+  border: 2px solid green;
+  padding: 0.5em;
+  background: #2bb590;
+  border-radius: 0.5em;
+}
+
+/* Calculator buttons are square and have a border */
+#calc button {
+  width: 80px;
+  height: 40px;
+  margin: 0.1em 0.1em 0.1em 0.1em;
+  border: 2px solid green;
+  border-radius: 0.5em;
+  background: #2bb0b5;
+  font-size: 14pt;
+}
+
+/* Change calculator button background on click */
+#calc button:active {
+  background-color: #208387;
+}
+
+/* Make the display area a reasonable size */
+#calc #display {
+  width: 320px;
+  height: 20px;
+  border: 2px solid green;
+  border-radius: 0.5em;
+  margin-left: 0.1em;
+  padding: 0.5em;
+  overflow: hidden;
+  text-align: right;
+  font-size: 14pt;
+}

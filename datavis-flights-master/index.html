@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flight Data</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Controls for the plot -->
+        <div id="controls" class="col-sm-3 col-md-3 col-lg-2 sidebar">
+          <h1>Flight Data</h1>
+          
+          <h4>Carrier</h4>
+          <select id="carrier">
+            <option value="all" selected>All</option>
+            <option value="AA">American Airlines</option>
+            <option value="DL">Delta Airlines</option>
+          </select>
+          
+          <h4>Day of Week</h4>
+          <div class="checkbox">
+            <label><input id="monday" type="checkbox" checked> Monday</label>
+          </div>
+          <div class="checkbox">
+            <label><input id="tuesday" type="checkbox" checked> Tuesday</label>
+          </div>
+          <div class="checkbox">
+            <label><input id="wednesday" type="checkbox" checked> Wednesday</label>
+          </div>
+          <div class="checkbox">
+            <label><input id="thursday" type="checkbox" checked> Thursday</label>
+          </div>
+          <div class="checkbox">
+            <label><input id="friday" type="checkbox" checked> Friday</label>
+          </div>
+          <div class="checkbox">
+            <label><input id="saturday" type="checkbox" checked> Saturday</label>
+          </div>
+          <div class="checkbox">
+            <label><input id="sunday" type="checkbox" checked> Sunday</label>
+          </div>
+        </div>
+        
+        <!-- The main plot area -->
+        <div id="map" class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 col-lg-10 col-lg-offset-2"></div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="flightdata.js"></script>
+  </body>
+</html>
